@@ -19,6 +19,8 @@ Clone the repo, install npm's, type node index.js, follow questions
 
 ## Usage
 
+# [![video of app usage]](./assets/videos/ManageMyTeam.mov)
+
 Organize your employee's with this list
 
 ## License
@@ -31,10 +33,9 @@ Contact via email
 
 ## Tests
 
-use jest to test 
+use jest to test
 
 ## Contact
 
 Github: MacFGlenn
 Email: macfglenn@gmail.com
-
