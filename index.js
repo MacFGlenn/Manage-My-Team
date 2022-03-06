@@ -102,3 +102,26 @@ const newEmployee = () => {
       }
     });
 };
+
+const writeFile = (data) => {
+  fs.writeFile("./dist/index.html", data, (err) => {
+    if (err) {
+      console.log(err);
+      return;
+    } else {
+      console.log("Employee profile was succesfully generated, found in index.html");
+    }
+  });
+};
+
+newManager()
+  .then(newEmployee)
+  .then((teamMembers) => {
+    return generateHTML(teamMembers);
+  })
+  .then((pageData) => {
+    return writeFile(pageData);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
