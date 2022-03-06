@@ -92,7 +92,9 @@ const generateMainHTML = function (employees) {
   </head>
   <body>
     <header>
-        Manage My Team
+        <h1>
+            Manage My Team
+        </h1>
     <header>
 
     <main>
